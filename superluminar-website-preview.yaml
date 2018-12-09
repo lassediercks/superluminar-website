@@ -1,0 +1,94 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Bucket and User for previews of https://superluminar.io
+Parameters:
+  GithubOauthToken:
+    Type: String
+  GithubRepoOwner:
+    Type: String
+    Default: superluminar-io
+  GithubRepoName:
+    Type: String
+    Default: superluminar-website
+Resources:
+  WebsitePreviewBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      LifecycleConfiguration:
+        Rules:
+        - ExpirationInDays: 30
+          Status: Enabled
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+  PreviewBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref WebsitePreviewBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          Effect: Allow
+          Principal: "*"
+          Action: s3:GetObject
+          Resource: !Sub arn:aws:s3:::${WebsitePreviewBucket}/*
+  DeployWebsiteBuild:
+    Type: AWS::CodeBuild::Project
+    Properties:
+      Triggers:
+        Webhook: true
+      Artifacts:
+        Type: NO_ARTIFACTS
+      Environment:
+        ComputeType: BUILD_GENERAL1_SMALL
+        Image: till/alpine:build-readey
+        Type: LINUX_CONTAINER
+        EnvironmentVariables:
+        - Name: PREVIEW_BUCKET
+          Value: !Ref WebsitePreviewBucket
+        - Name: BUCKET_PATH
+          Value: "${CODEBUILD_WEBHOOK_TRIGGER}"
+        - Name: BASE_URL
+          Value: !Join ['', [ 'https://', !GetAtt WebsitePreviewBucket.DomainName, "/", "${CODEBUILD_WEBHOOK_TRIGGER}", "/" ] ]
+        - Name: GITHUB_TOKEN
+          Value: !Ref GithubOauthToken
+      Name: DeployWebsitePreview
+      ServiceRole: !Ref DeployWebsitePreviewRole
+      Source:
+        Auth:
+          Type: OAUTH
+        Type: GITHUB
+        Location: !Sub https://github.com/${GithubRepoOwner}/${GithubRepoName}.git
+        ReportBuildStatus: true
+        BuildSpec: |
+          version: 0.1
+          phases:
+            install:
+              commands:
+                - make install
+            build:
+              commands:
+                - make build-preview
+            post_build:
+              commands:
+                - make deploy-preview
+  DeployWebsitePreviewRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          Effect: Allow
+          Principal:
+            Service: codebuild.amazonaws.com
+          Action: sts:AssumeRole
+      ManagedPolicyArns:
+      - arn:aws:iam::aws:policy/AdministratorAccess
+Outputs:
+  S3BucketURL:
+    Value: !Join ['', ['https://', !GetAtt WebsitePreviewBucket.DomainName ] ]
+    Description: Name of S3 bucket to hold website content
+  S3BucketHostname:
+    Description: Hostname of the Preview Bucket
+    Value: !Sub ${WebsitePreviewBucket}.s3-website-${AWS::Region}.amazonaws.com
+    Export:
+      Name: !Join [ ":", [ !Ref "AWS::StackName", S3BucketHostname ] ]

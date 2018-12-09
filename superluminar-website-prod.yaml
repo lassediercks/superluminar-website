@@ -29,6 +29,9 @@ Parameters:
   SlackHookUrl:
     Type: String
     Description: Slack hook to call when AWS CodePipeline finishes
+  PreviewStack:
+    Type: String
+    Default: deploy-preview-codebuild
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
@@ -307,6 +310,16 @@ Resources:
             Id: Origin
             CustomOriginConfig:
               OriginProtocolPolicy: http-only
+          - DomainName: {'Fn::ImportValue': !Sub '${PreviewStack}:S3BucketHostname'}
+            Id: Preview
+            CustomOriginConfig:
+              OriginProtocolPolicy: http-only
+        CacheBehaviors:
+          - PathPattern: pr/*
+            TargetOriginId: Preview
+            ForwardedValues:
+              QueryString: false
+            ViewerProtocolPolicy: redirect-to-https
         DefaultCacheBehavior:
           Compress: true
           DefaultTTL: 300
