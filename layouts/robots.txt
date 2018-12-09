@@ -1,3 +1,4 @@
 User-agent: *
 
 Disallow: /agb/
+Disallow: /pr/
