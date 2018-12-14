@@ -29,9 +29,6 @@ Parameters:
   SlackHookUrl:
     Type: String
     Description: Slack hook to call when AWS CodePipeline finishes
-  PreviewStack:
-    Type: String
-    Default: deploy-preview-codebuild
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
