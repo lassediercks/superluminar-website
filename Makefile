@@ -52,13 +52,6 @@ deploy-pipeline: ## Deploys the AWS CodePipeline that deploys the website
 		--template-file superluminar-website-prod.yaml \
 		--capabilities CAPABILITY_IAM
 
-deploy-preview-pipeline: ## Deploys the AWS CodeBuildProject that deploys the website preview
-	aws cloudformation deploy \
-		--stack-name deploy-preview-codebuild \
-		--region us-east-1 \
-		--template-file superluminar-website-preview.yaml \
-		--capabilities CAPABILITY_IAM
-
 .PHONY: help
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
