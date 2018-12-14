@@ -1,9 +1,6 @@
 ---
 title: "Payments"
 description: "Make payments to superluminar"
-menu:
-  main:
-    weight: 4
 ---
 
 # Make a payment to superluminar!
