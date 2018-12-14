@@ -420,6 +420,8 @@ Resources:
           Value: !Join ['', [ 'https://', !GetAtt WebsitePreviewBucket.DomainName, "/", "${CODEBUILD_WEBHOOK_TRIGGER}", "/" ] ]
         - Name: GITHUB_TOKEN
           Value: !Ref GithubOauthToken
+        - Name: CLOUDFRONT_DISTRIBUTION_ID
+          Value: !Ref WebsiteCdn
       Name: BuildWebsitePreview
       ServiceRole: !Ref DeployWebsitePreviewRole
       Source:
