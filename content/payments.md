@@ -11,7 +11,7 @@ description: "Make payments to superluminar"
 
 <script src="https://js.stripe.com/v3"></script>
 <script>
-var stripe = Stripe('pk_test_XDvvPIsJ65tSpBxMGKWEbl2b', {
+var stripe = Stripe('pk_live_gHUNN1o0YoOOfWhuhEdNjiFk', {
     betas: ['checkout_beta_4']
 });
 
