@@ -5,14 +5,8 @@ description: "Make payments to superluminar"
 
 # Make a payment to superluminar!
 <div class="col-4 p2 border-box border rounded">
-    <p class="h3">Silver Sponsorship</p>
-    <button class="btn white bg-blue rounded" id="checkout-button-silver">Pay 500 €</button>
-</div>
-<div class="p2 border-box">
-</div>
-<div class="col-4 p2 border-box border rounded">
-    <p class="h3">Gold Sponsorship</p>
-    <button class="btn white bg-blue rounded" id="checkout-button-gold">Pay 1000 €</button>
+    <p class="h3">Diversity Sponsor - Adobe</p>
+    <button class="btn white bg-blue rounded" id="checkout-button-adobe">Pay 1487,50 €</button>
 </div>
 
 <script src="https://js.stripe.com/v3"></script>
@@ -38,9 +32,6 @@ var eventListenerProducer = function(sku) {
 };
 
 document
-    .getElementById('checkout-button-silver')
-    .addEventListener('click', eventListenerProducer('sku_E9WruwOlSqOBPI'));
-document
-    .getElementById('checkout-button-silver')
-    .addEventListener('click', eventListenerProducer('sku_E9WrDzWq2Z80QN'));
+    .getElementById('checkout-button-adobe')
+    .addEventListener('click', eventListenerProducer('sku_EHMdIBl9y2t6t5'));
 </script>
