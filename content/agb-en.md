@@ -3,8 +3,6 @@ title: "General terms and conditions"
 ---
 
 
-
-==================
 Last update: 09.07.2018
 
 §1 Scope of application
