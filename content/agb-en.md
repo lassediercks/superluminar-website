@@ -45,12 +45,15 @@ We provide our services personally on site or "remotely" by means of remote data
 We provide our services with the greatest possible care and diligence. Careful analysis of the status quo, drafting an individual target image for the customer and drawing up an implementation plan that gradually introduces the customer and his employees to the target image form the basis of our holistic consulting services.
 
 2.1.1 Example or proof-of-concept code
+
 Unless contractually agreed otherwise, we do not provide independent programming services within the scope of our consulting, training and coaching services; however, within the scope of our activities we often write sample or proof-of-concept code. We expressly point out that we are not liable for example or proof-of-concept code according to 6.2.1.
 
 2.1.2 Tandem or Mob Programming
+
 We supervise the customer's programming work or moderate the cooperation of several programmers (mob-programming). We point out that our liability for these services is limited according to 6.2.2.
 
 2.1.3 Collaboration in agile projects
+
 In agile projects we work exclusively for the respective customer.
 
 The cooperation with external third parties in an agile project takes place exclusively on instruction and in the interest of the respective customer. We do not assume any responsibility for the activity of third parties employed by the customer.
@@ -68,6 +71,7 @@ If the customer prefers a particular consultant, this must be communicated to us
 Unless otherwise agreed, we shall be entitled to have the contractually agreed services performed in whole or in part by third parties, whereby we shall guarantee the proper fulfilment of the contractual obligations assumed by us.
 
 2.2.2 Cooperation of the customer
+
 Our services require the active cooperation of the customer. Our customers are therefore obliged to provide us with the information and data required to complete the order in good time and to provide us with any necessary working materials, in particular workplaces, to an appropriate extent.
 
 §3 Conclusion of Contract, Changes in Services, Prices
@@ -77,15 +81,18 @@ Our services require the active cooperation of the customer. Our customers are t
 -------------
 
 3.1.1 Offer and order confirmation
+
 Unless otherwise stated, all our offers are subject to change without notice. A contract is only concluded by our order confirmation.
 
 3.1.2 Text form
+
 The customer's order and our order confirmation must be in text form (§ 126b BGB). Verbal ancillary agreements are only valid if they are confirmed by us in text form.
 
 3.2 Changes in services
 -------------
 
 3.2.1 Date postponements
+
 Any postponements requested by the customer are only possible up to four weeks before the confirmed date. A new date must be agreed with us, which - subject to our capacities - may not be more than three months after the original date. It is only possible to postpone an appointment; appointments postponed at the customer's request cannot be postponed again.
 
 Additional costs may arise due to a postponement requested by the customer (rebooking fees):
@@ -99,12 +106,14 @@ In the event of a postponement up to four weeks prior to use, we will charge a r
 Under four weeks before the operation, a postponement is no longer possible. If the customer nevertheless waives our services, the agreed price shall be invoiced, whereby any expenses saved by us shall be deducted. The saved expenditure is to be deducted at a flat rate of 15% of the agreed price. The customer shall be entitled to demonstrate and prove higher saved expenses.
 
 3.2.2 Other changes in benefits
+
 If changes to the agreed scope of services requested by the customer and accepted by us, such as, for example, a change of location or a change of consultant, lead to additional expenses on our part, we shall be entitled to invoice the customer for these additionally.
 
 3.3 Fees and travel expenses
 -------------
 
 3.3.1 Fee
+
 We charge for our services on the basis of the number of working days per consultant. Unless otherwise agreed, a daily rate of € 1,600 shall apply.
 
 One day's work is 8 hours. The beginning and end of the day of operation as well as break times are arranged according to the customer's needs within the framework of our operational possibilities. An assignment day begins at 08:00 hrs at the earliest and ends at 19:00 hrs at the latest. Unless otherwise agreed, we start work at 09:00 am local time at the site and the day ends at 18:00 pm. Around 12:30 we have a one hour lunch break.
@@ -118,12 +127,15 @@ If we have to end the last day earlier in order to be able to use a suitable tra
 For work on national holidays or on weekends we charge 100% surcharge on the daily or minute rate.
 
 3.3.2 Travel expenses
+
 Insofar as our offers show travel and incidental expenses, it is a non-binding estimate, as the actual costs incurred are not reliably calculable when preparing the offer. The customer shall bear the actual travel and incidental expenses in accordance with the following provisions against proof.
 
 3.3.3 Handling flat rate
+
 We charge a handling fee of 5% of the travel and incidental expenses incurred on all travel and incidental expenses incurred.
 
 3.3.4 Travel expenses
+
 We regularly organize and book our trips ourselves. We select the means of transport, the place of accommodation and the hotel at our discretion. We make every effort to book a single room in a mid-range hotel that is conveniently located and close to the customer. The outward and return journeys should not exceed 30 minutes. Should this not be possible for reasons for which we are not responsible, we shall be entitled to charge the customer for the entire duration of the daily trips. The agreements on the 1⁄4 hourly rate and the surcharge for weekends and public holidays under 3.3.1 apply accordingly.
 
 In addition, we shall be entitled to charge the times for travel to and from the place of deployment per commenced 1⁄4 hour at a rate of 1⁄64 of the agreed daily rate. On weekends and public holidays throughout Germany, billing will be made for each commenced 1⁄4 hour at 1⁄32 of the agreed daily rate.
@@ -131,6 +143,7 @@ In addition, we shall be entitled to charge the times for travel to and from the
 For orders placed with the customer, we shall travel at our discretion on the evening before or in the morning of the first day, whereby any overnight costs shall be borne by the customer. Normally we return on the evening of the last working day. In this case it may be necessary to finish the last working day at 17:00 at the latest so that we can reach our transport connection.
 
 3.3.5 Other ancillary costs
+
 Insofar as other ancillary costs (e.g. external services) are incurred, we shall charge these on presentation of proof.
 
 §4 Invoice and payment
@@ -162,9 +175,11 @@ We are entitled to demand partial payments or advance payment. Unless otherwise 
 -------------
 
 5.1.1 Loss of performance due to force majeure
+
 If an order cannot be executed due to force majeure (war, civil war or danger of war or civil war; natural or environmental catastrophes; terror or danger of terror; riot; strike or similar), we and the customer shall be released from the respective obligation to perform. A travel warning issued by the Federal Foreign Office shall also be regarded as force majeure.
 
 5.1.2 Delays
+
 We plan our arrival in such a way that we are punctually at the place of action. However, delays may occur in exceptional cases due to unforeseeable events of force majeure (5.1.1), denied boarding on a flight or rail line, traffic obstructions (e.g. traffic jams or closures) or entry obstructions for which we are not responsible. As far as possible, we endeavour to inform the customer immediately in the event of delays.
 
 If less than eight hours of working time can be worked due to delays, we make up the lost time in consultation with the customer by longer presence. If this should not be possible, the customer can reduce the remuneration for each not performed 1⁄4 hour by 1⁄32 of the agreed daily rate.
@@ -172,6 +187,7 @@ If less than eight hours of working time can be worked due to delays, we make up
 If a considerable delay calls into question the sense of an entire assignment, for example, in the case of a delay of several hours in the journey to a one-day assignment, we try to reach the customer and coordinate the procedure with him. If this is not possible for us, we will decide at our own discretion whether to cancel or continue the journey and inform the customer immediately.
 
 5.1.3 Illness
+
 If an order cannot be carried out by us due to illness of an employee, we will inform the customer immediately as soon as this is foreseeable for us. The order is then either carried out in consultation with us at a suitable later date or taken over by another employee.
 
 If an on-site appointment with the customer has to be terminated prematurely due to illness, the customer may reduce the remuneration in accordance with 5.1.2.
@@ -212,6 +228,7 @@ The above limitation of liability shall also apply subsidiarily with regard to t
 -------------
 
 6.2.1 No Liability or Warranty for Program Code
+
 We do not provide programming services; however, we often write sample or proof-of-concept code as part of our activities. The customer receives a simple, transferable, non-exclusive right of use, unlimited in time and space, for use in projects and products for all sample code that we create within the scope of training or consulting orders. The transfer is free of charge.
 
 However, we explicitly point out that example code is not production code. The code is not tested or at least not fully tested. In addition, it is not always possible to think through the effects of all possible deployment scenarios in everyday training and consulting.
@@ -219,6 +236,7 @@ However, we explicitly point out that example code is not production code. The c
 We therefore accept no liability whatsoever for the general applicability of sample code or its suitability for a particular purpose. The use of sample code is at the customer's own risk.
 
 6.2.2 Limited Liability for Tandem or Mob Programming
+
 As far as we supervise the customer's programming work (tandem programming) or moderate the cooperation of several programmers (mob programming), we are only liable for obvious errors that were introduced into the code during the concrete tandem or mob session.
 
 We shall only be liable for consequential damages if the overall context (purpose of use, dependencies, interfaces, etc.) of the code created by means of tandem or mob programming has been disclosed to us prior to conclusion of the contract.
