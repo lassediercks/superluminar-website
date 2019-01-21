@@ -4,7 +4,6 @@ title: "General terms and conditions"
 
 
 
-General terms and conditions
 ==================
 Last update: 09.07.2018
 
