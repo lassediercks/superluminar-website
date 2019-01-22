@@ -2,3 +2,4 @@ public/
 hugo
 *.swp
 tmp/
+*.DS_Store
