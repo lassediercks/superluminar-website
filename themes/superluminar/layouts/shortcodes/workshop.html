@@ -1,0 +1,81 @@
+
+
+
+<style> 
+    .sl-workshop__wrap{
+        position: relative;
+    }
+    .sl-workshop-thumb{
+        padding: 2em;
+        width: 400px;
+        background: white;
+        color: black;
+    }
+    .sl-workshop-label{
+        position: absolute;
+        bottom: 0;
+        background: var(--sl-teal);
+        color: var(--sl-grape);
+        padding: .3em .9em;
+        border-radius: 40px;
+        font-weight: bold;
+
+    }
+
+    .sl-workshop{
+        z-index: 500;
+        left: 42px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: calc(100% - (42px *2));
+        background: white;
+        color: black;
+        position: fixed;
+        display: none;
+    }
+
+
+    .toggle {
+        visibility: hidden;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #toggle-{{ .Get 0 | len }}:checked ~ .sl-workshop{}
+
+    .toggle:checked ~ .sl-workshop-thumb{
+        filter: blur(5px);
+    }
+    .toggle:checked ~ .sl-workshop-label {
+        filter: blur(5px);
+    }
+    #toggle-{{ .Get 0 | len }}:checked ~ .sl-workshop{
+        display: block;
+    }
+
+</style>
+
+
+<div class="sl-workshop__wrap">
+
+    <input id='toggle-{{ .Get 0 | len }}' class="toggle" type="checkbox">
+    <label class="sl-workshop-label" for="toggle-{{ .Get 0 | len }}">
+        Mehr ►
+    </label>
+    <div class="sl-workshop-thumb">
+        {{ .Get 0}}
+    </div>
+
+
+<div class="sl-workshop">
+        <h2>{{ .Get 0 }}</h2>
+        <h3>{{ .Get 2 }}</h3>
+        {{ .Inner }}
+
+    <span class="duration">{{ .Get 1 }}</span>
+    <label class="sl-workshop-label" for="toggle-{{ .Get 0 | len }}">Weniger  ▲</label>
+</div>
+</div>
