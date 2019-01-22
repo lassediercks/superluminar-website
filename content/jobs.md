@@ -6,6 +6,10 @@ menu:
     weight: 3
 ---
 
+
+
+{{% jobs-description %}}
+
 # Senior Cloud Consultant (m/w/d)
 
 superluminar bietet Cloud Consulting für Unternehmen, Startups und Organisationen und unser Büro ist in Hamburg am Fischmarkt. 
@@ -13,6 +17,12 @@ Wir verstehen nicht nur die modernsten Technologien, wir schauen auch auf Mensch
 
 Als **Senior Cloud Consultant** arbeitest du mit uns zusammen und unterstützt unsere Kunden bei dem Weg in und durch die Cloud. 
 Der Fokus liegt dabei auf Beratung, Coaching und Trainings. Werkverträge und Arbeit nach Pflichtenheft gibt es bei uns nicht.
+
+{{% /jobs-description %}}
+
+
+
+{{% jobs-description %}}
 
 ## Was wir bieten: 
 
@@ -22,6 +32,10 @@ Der Fokus liegt dabei auf Beratung, Coaching und Trainings. Werkverträge und Ar
 - Ein großzügiges Hardware-Setup Budget
 - Teilzeit ist grundsätzlich möglich
 - Fortbildungen wie zum Beispiel "Workshops halten", "Feedback geben und nehmen" und "Visualisieren am Flipchart"
+{{% /jobs-description %}}
+
+
+{{% jobs-description %}}
 
 ## Dein Profil:
 
@@ -40,3 +54,5 @@ Der Fokus liegt dabei auf Beratung, Coaching und Trainings. Werkverträge und Ar
 - Du verfügst über gute Deutsch- und Englischkenntnisse in Wort und Schrift
 
 Haben wir dein Interesse geweckt? Dann sende uns deine aussagekräftige Bewerbung an [jobs@superluminar.io](mailto:jobs@superluminar.io).
+
+{{% /jobs-description %}}
