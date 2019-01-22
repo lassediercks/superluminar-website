@@ -1,0 +1,47 @@
+
+:root{
+    --sl-grape: #211D2B;
+    --sl-teal: #03FEB7;
+}
+
+*,*:after, *:before{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    color: white;
+    background: var(--sl-grape) ;
+}
+
+.stage{
+    height: 80vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Paragraph */
+
+.sl-paragraph{
+    margin-bottom: 40px;
+}
+
+
+/* Button */
+
+.sl-button{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: var(--sl-teal);
+    border-radius: 66px;
+    font-weight: bold;
+    color: var(--sl-grape);
+    padding: .4em 1.5em;
+
+
+}
+

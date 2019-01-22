@@ -8,6 +8,8 @@
         {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
         {{ with .Description }}<meta name="og:description" content="{{ . }}">{{ end }}
         <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/superluminar.css">
+
         {{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
         <meta property="og:title" content="{{ .Title }}">
         <meta property="og:type" content="{{ if eq "post" .Type }}article{{ else }}website{{end}}">
