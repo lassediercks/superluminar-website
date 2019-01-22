@@ -1,6 +1,7 @@
 
 :root{
     --sl-grape: #211D2B;
+    --sl-purple: #ED486A;
     --sl-teal: #03FEB7;
 }
 
@@ -14,21 +15,52 @@ body{
     background: var(--sl-grape) ;
 }
 
+.sl-header{
+    scroll-snap-align: start;
+}
+
+.sl-footer{
+    scroll-snap-align: end;
+}
+
 .stage{
-    height: 80vh;
+    scroll-snap-align: start;
+    height: 100vh;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
 }
 
+body {
+    max-height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.stage {
+    scroll-snap-align: start;
+}
+
+/* Navigation */
+
+.active .navItem-text{
+    padding: .2em 0;
+    border-bottom: 2px solid var(--sl-purple);
+}
+/* Jobs */
+
+
+.jobs-page{
+    height: 70vh;
+}
+
 
 /* Paragraph */
 
 .sl-paragraph{
-    margin-bottom: 40px;
+    margin-bottom: 90px;
 }
-
 
 /* Button */
 
