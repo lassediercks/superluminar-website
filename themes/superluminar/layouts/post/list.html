@@ -1,18 +1,26 @@
 {{ partial "header.html" . }}
 	<main>
-        <article>
+        <article class="sl-blog-header">
           <header>
-            <h1>{{ .Title }}</h1>
+            <h1 class="sl-headline">{{ .Title }}</h1>
           </header>
           {{ .Content }}
         </article>
+        <div class="stage blog-list__container">
               {{ range .Data.Pages.GroupByDate "2006" }}
               <h3>{{ .Key }}</h3>
-              <ul class="list-reset">
+              <ul class="blog-list list-reset">
                 {{ range .Pages }}
-                <li><a href="{{ .Permalink }}" class="btn pl0">{{ .Title }}</a></li>
+                <li class="blog-list__item">
+                  <a href="{{ .Permalink }}" class="blog-list__item-link btn pl0">
+                    <span class="blog-list__item-date">{{ dateFormat "1. Jan" .Date  }}</span>
+                    <span>{{ .Title }}</span>
+                  </a>
+                </li>
                 {{ end }}
               </ul>
               {{ end }}
+
+            </div>
 	</main>
 {{ partial "footer.html" . }}
