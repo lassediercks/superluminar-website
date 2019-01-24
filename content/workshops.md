@@ -6,18 +6,26 @@ menu:
     weight: 1
 ---
 
-Wir bieten zahlreiche Workshops, Schulungen und Trainings rund um die Bereiche Cloud, AWS, Serverless und moderne Softwareentwicklung an.
+<div class="stage workshops">
+  <div class="workshops_header">
+    <h1 class="sl-headline">
+      Workshops
+    </h1>
+    <p class="sl-paragraph">
+      Wir bieten zahlreiche Workshops, Schulungen und Trainings rund um die Bereiche Cloud, AWS, Serverless und moderne Softwareentwicklung an.
+    </p>
+  </div>
+  <div class="workshops_grid">
 
-Die Workshops können je nach Wunsch inhouse oder remote stattfinden.
+{{% workshop "Executive Summary: Cloud und Aws für Entscheider*innen" "1 Tag" "CxO, Entscheider*innen, Teamleiter*innen, die eine kompakte Übersicht wünschen." %}}
 
-<div class="stage">
-{{% workshop "Executive Summary: Clound und Aws für Entscheider*innen" "1 Tag" "CxO, Entscheider*innen, Teamleiter*innen, die eine kompakte Übersicht wünschen." %}}
 - Mit Cynefin und Wardley Mapping zur Produktstrategie: Entscheidungsframeworks, wann Cloud Bausteine einzusetzen sind, oder eine Eigenentwicklung vorzuziehen ist.
 - Überblick über die verschiedenen AWS Produkte und Bausteine.
 - Überblick darüber, wie sich Development und Operations in der Cloud ändern: Welche Verantwortungen fallen weg, welche kommen neu dazu? Was ändert sich für die Teams?
 - Übersicht über Cloud Bausteine, die sich für “Rapid Prototyping” eignen, und euren Mitarbeiter\*innen erlauben, Ideen schnell umzusetzen und zu testen.
 - Pro und Contra Argumente rund um das Thema Cloud und Strategien gegen möglichen internen Widerstand.
 - Einblick in “Enterprise AWS”: Sicherheitskonzepte, Anbindung an bestehendene Systeme und Netzwerke
+
 {{% /workshop %}}
 
 {{% workshop "AWS von A bis Z: Cloud Bausteine erklärt" "1 Tag" "Alle, die einen kompakten Überblick über die gängigsten AWS Bausteine bekommen wollen, um effektiv und kostengünstig mit der Cloud Software zu entwickeln."%}}
@@ -50,17 +58,6 @@ Die Workshops können je nach Wunsch inhouse oder remote stattfinden.
 - Serverless Operations: (benutzerdefinierte) Metriken, Alerting und Logging mit CloudWatch
 - Distributed Tracing mit X-Ray
   {{% /workshop %}}
-
-</div>
-
-<div class="stage">
-## Interesse?
- 
-Bei Interesse oder Fragen zu den Workshops wendet euch an: [workshops@superluminar.io](mailto:workshops@superluminar.io).
-
-<img src="/img/aws-consulting-partner.png" style="width: 15%"><br>
-Die superluminar GmbH ist Standard Consulting Partner von AWS.
-
-Es gelten die [Veranstaltungs-AGB]({{< relref "workshop-agb.md" >}}) der superluminar GmbH
+  </div>
 
 </div>
