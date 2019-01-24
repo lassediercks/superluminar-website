@@ -6,30 +6,34 @@ menu:
     weight: 1
 ---
 
-<div class="stage">
+<div class="stage ">
 
-<h1 class="sl-headline">Das Team</h1>
+  <div class="team-container">
+  <h1 class="sl-headline">Das Team</h1>
 
-<p class="sl-paragraph">Unsere Vision: Mit uns entwickelt ihr euren Kern nach vorn. <br>Unsere Werte: Mutig. Ehrlich. Vorwärtsgewandt.</p>
+  <p class="sl-paragraph">Unsere Vision: Mit uns entwickelt ihr euren Kern nach vorn. <br>Unsere Werte: Mutig. Ehrlich. Vorwärtsgewandt.</p>
+  
+  <div class="team-members">
+{{% team-member "Boris Erdmann" "/img/profile/boris.jpg" %}}
 
-<image class="fit rounded" src="/img/profile/boris.jpg" alt="Boris Erdmann" width="250px" height="250px"/>
-<h3>Boris Erdmann</h3>
 hat über 20 Jahre Erfahrung in der IT – er hat unter anderem als CTO bei Jimdo und VP Engineering bei figo die Cloud-Transitionen vorangetrieben. Seine Schwerpunkte liegen in der Systemarchitektur und Organisationsentwicklung.
 
-<image class="fit rounded" src="/img/profile/deniz.jpg" alt="Deniz Adrian" width="250px" height="250px"/>
-<h3>Deniz Adrian</h3>
- verfügt über 15 Jahre Berufserfahrung und war als Systems Engineer u.a. bei AIDA und Jimdo, Teamlead bei Bigpoint und CTO bei brandseven tätig. Deniz’ Herz schlägt für Security und DevOps.
+{{% /team-member %}}
 
-<image class="fit rounded" src="/img/profile/jan.jpg" alt="Jan Brauer" width="250px" height="250px"/>
-<h3>Jan Brauer</h3>
+{{% team-member "Jan Brauer" "/img/profile/jan.jpg" %}}
+
 verfügt über 15 Jahre Erfahrung und hat für Unternehmen wie Coremedia und Jimdo als Teamlead, Systemarchitekt und Application- und DevOps- Engineer gearbeitet. Durch sein polyglottes Arbeiten verbindet er unterschiedlichste Bereiche der Produktentwicklung.
 
-<image class="fit rounded" src="/img/profile/soenke.jpg" alt="Soenke Ruempler" width="250px" height="250px"/>
-<h3>Soenke Ruempler</h3>
+{{% /team-member %}}
+
+{{% team-member "Soenke Ruempler" "/img/profile/soenke.jpg" %}}
 ist seit über 15 Jahren in der IT tätig. Seine letzten Stationen waren Technical Director bei SinnerSchrader und DevOps/Cloud Evangelist bei Jimdo. Darüber hinaus beriet er Unternehmen bei der Cloud Migration.
+{{% /team-member %}}
 
-<image class="fit rounded" src="/img/profile/hendric.jpg" alt="Hendric Rüsch" width="250px" height="250px"/>
-<h3>Hendric Rüsch</h3>
+{{% team-member "Hendric Rüsch" "/img/profile/hendric.jpg" %}}
 arbeitet seit über 10 Jahren auf Unternehmens- als auch auf Agenturseite in der Digital-Branche. Seine Stationen waren unter anderem Jimdo, SysEleven und strg., sein Schwerpunkt liegt in der Digitalstrategie, und er bewegt sich gerne an der Schnittstelle zwischen Dev und NonDev.
+{{% /team-member %}}
 
+</div>
+  </div>
 </div>
