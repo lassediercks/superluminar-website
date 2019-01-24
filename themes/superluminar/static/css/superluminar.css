@@ -1,5 +1,6 @@
 :root {
   --sl-grape: #211d2b;
+  --sl-grey: #393f4d;
   --sl-grape--light: #4a303d;
   --sl-purple: #ed486a;
   --sl-teal: #03feb7;
@@ -60,12 +61,6 @@ body:after {
   margin: 0 10px;
   color: white;
   text-decoration: none;
-}
-
-.sl-footer {
-  position: relative;
-  z-index: 5;
-  scroll-snap-align: end;
 }
 
 .stage {
@@ -199,4 +194,92 @@ body {
   text-transform: uppercase;
   font-family: var(--sl-font-headline);
   font-weight: var(--sl-font-weight-regular);
+}
+
+/* Footer */
+.sl-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 5;
+  scroll-snap-align: end;
+}
+.sl-newsletter {
+  position: relative;
+  z-index: 5;
+  color: var(--sl-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  width: 572px;
+  height: 563px;
+  background-image: url("/img/footer_bg.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.sl-newsletter_headline {
+  width: 220px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.sl-newsletter_hint {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.sl-newsletter_input {
+  width: 280px;
+  margin-bottom: 18px;
+  font-size: 12px;
+  text-align: center;
+  height: 24px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.13);
+  border: none;
+}
+.sl-newsletter_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.sl-newsletter_button {
+  display: inline-block;
+  width: auto;
+  border: none;
+}
+.sl-footer_info {
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 50px;
+}
+.sl-footer_infolinks a {
+  text-decoration: none;
+  color: var(--sl-grey);
+  opacity: 0.5;
+  padding: 12px;
+}
+
+.sl-referenzen {
+  position: relative;
+  width: 100%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+.sl-referenzen__image {
+}
+
+.sl-referenzen_headline {
+  position: absolute;
+  left: 50px;
+  width: 313px;
 }
