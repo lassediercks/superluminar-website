@@ -195,6 +195,50 @@ body {
   font-family: var(--sl-font-headline);
   font-weight: var(--sl-font-weight-regular);
 }
+/* Angebot */
+
+.sl-angebot_container {
+  max-width: var(--sl-max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sl-angebot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sl-angebot_description {
+  margin: 0 auto;
+
+  max-width: none;
+  padding: 20px 87px;
+  position: relative;
+}
+.sl-angebot_description:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("/img/angebot_border.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 28px;
+  height: 40px;
+}
+.sl-angebot_description:before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+  background-image: url("/img/angebot_border.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 28px;
+  height: 40px;
+}
 
 /* Footer */
 .sl-footer {
