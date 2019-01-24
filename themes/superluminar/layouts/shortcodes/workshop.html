@@ -1,20 +1,21 @@
 
 
 
+{{ $id := .Get 0 }}
 
 
 <div class="sl-workshop__wrap">
     <style> 
 
-            #toggle-{{ .Get 0 | len }}:checked ~ .sl-workshop{
+            #toggle-{{ sha1 $id }}:checked ~ .sl-workshop{
                 visibility: visible;
                 opacity: 1;
             }
         
         </style>
             
-    <input id='toggle-{{ .Get 0 | len }}' class="toggle" type="checkbox">
-    <label class="sl-workshop-label sl-workshop-label--open" for="toggle-{{ .Get 0 | len }}">
+    <input id='toggle-{{ sha1 $id }}' class="toggle" type="checkbox">
+    <label class="sl-workshop-label sl-workshop-label--open" for="toggle-{{ sha1 $id }}">
         Mehr ▸
     </label>
     <div class="sl-workshop-thumb">
@@ -34,7 +35,7 @@
             {{ .Inner }}
             
             <span class="sl-workshop_duration">Workshop Dauer: {{ .Get 1 }}</span>
-            <label class="sl-workshop-label sl-workshop-label--close" for="toggle-{{ .Get 0 | len }}">Weniger  ▲</label>
+            <label class="sl-workshop-label sl-workshop-label--close" for="toggle-{{ sha1 $id }}">Weniger  ▲</label>
         </div>
     </div>
 </div>
