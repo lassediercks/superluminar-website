@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="984px" height="498px" viewBox="0 0 984 498" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>card 2</title>
+    <desc>Created with Sketch.</desc>
+    <g style="box-shadow: 0 0 2px 0 red;" id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02_02_superluminar_workshops" transform="translate(-232.000000, -288.000000)" fill="#F9F9F9" fill-rule="nonzero">
+            <g id="workshop_card" transform="translate(144.000000, 195.000000)">
+                <g id="Group">
+                    <path d="M88.0000014,110 L87.9999995,574.000016 C87.9999992,583.388857 95.6111582,591.000016 104.999999,591.000017 C104.999999,591.000017 105,591.000017 105,591.000017 L820.717356,590.999992 C824.768044,590.999992 828.685613,589.553607 831.764459,586.92135 C991.921489,449.995209 1072,369.853818 1072,346.497179 C1072,323.143686 991.943065,240.081841 831.829186,97.311643 L831.829186,97.311643 C828.71482,94.5346283 824.687897,93.0000067 820.515238,93.0000066 L105,92.9999986 C95.6111593,92.9999985 87.9999999,100.611158 87.9999998,109.999998 C87.9999998,109.999999 87.9999998,109.999999 87.9999998,110 Z" id="card-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

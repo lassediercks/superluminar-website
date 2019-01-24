@@ -1,16 +1,17 @@
 :root {
   --sl-grape: #211d2b;
   --sl-grey: #393f4d;
+  --sl-pidgeon: #7a8390;
   --sl-grape--light: #4a303d;
   --sl-purple: #ed486a;
   --sl-teal: #03feb7;
   --sl-font-headline: "Space Mono";
   --sl-font-default: "Raleway", sans-serif;
-  --sl-font-weight-regular: "400";
-  --sl-font-weight-semibold: "600";
-  --sl-font-weight-medium: "500";
+  --sl-font-weight-regular: 400;
+  --sl-font-weight-semibold: 600;
+  --sl-font-weight-medium: 500;
 
-  --sl-max-width: 976px;
+  --sl-max-width: 984px;
 }
 
 @keyframes float {
@@ -326,4 +327,191 @@ body {
   position: absolute;
   left: 50px;
   width: 313px;
+}
+
+/* Workshop */
+
+.workshops {
+  max-width: var(--sl-max-width);
+  margin: 0 auto;
+}
+
+.workshops_header {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.workshops_grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 80px;
+  grid-column-gap: 10px;
+  grid-template-rows: 104px 104px 104px;
+}
+.sl-workshop__wrap {
+  position: relative;
+  margin-bottom: 40px;
+  height: 104px;
+}
+.sl-workshop__wrap:nth-child(1n + 2) {
+  right: 50px;
+}
+.sl-workshop__wrap:nth-child(-n + 2) {
+  right: -50px;
+}
+.sl-workshop__wrap:nth-child(2n + 2) {
+  top: -60px;
+}
+
+.sl-workshop__wrap:last-child {
+  right: -50px;
+  top: -60px;
+  grid-column: 2;
+}
+
+.sl-workshop-thumb {
+  width: 432px;
+  height: 100%;
+  background-image: url("/img/workshop_bg.svg");
+
+  color: black;
+}
+
+.sl-workshop-thumb_duration {
+  background: white;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  left: 220px;
+  bottom: -25px;
+  border: 2px solid var(--sl-teal);
+  border-radius: 50px;
+  position: absolute;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--sl-font-weight-semibold);
+}
+
+.sl-workshop-thumb_text {
+  margin: 0;
+  height: 104px;
+  width: 170px;
+  font-size: 16px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 65px;
+}
+
+.sl-workshop-label {
+  position: absolute;
+  bottom: 0;
+  background: var(--sl-teal);
+  color: var(--sl-grape);
+  padding: 0.3em 0.9em;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 12px;
+  z-index: 5;
+  font-weight: var(--sl-font-weight-semibold);
+}
+
+.sl-workshop-label--open {
+  left: 60px;
+  bottom: -1em;
+}
+
+.sl-workshop-label--close {
+  right: 250px;
+  bottom: -10px;
+}
+
+.sl-workshop {
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  z-index: 500;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 170ms ease-in-out;
+}
+
+.sl-workshop_duration {
+  border: 2px solid var(--sl-teal);
+  height: 56px;
+  width: 200px;
+  font-size: 12px;
+  font-weight: var(--sl-font-weight-semibold);
+  border-radius: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: absolute;
+  bottom: -28px;
+  left: -10px;
+}
+
+.sl-workshop_content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+  padding: 50px 250px 50px 40px;
+  width: var(--sl-max-width);
+  background-image: url("/img/single_workshop_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: black;
+}
+
+.sl-workshop_headline {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: var(--sl-font-weight-semibold);
+}
+
+.sl-workshop_target-group {
+  font-size: 14px;
+}
+
+.toggle {
+  visibility: hidden;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sl-workshop_target-group {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--sl-pidgeon);
+}
+
+/* List */
+.sl-workshop ul {
+  color: var(--sl-pidgeon);
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+.sl-workshop li {
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 14px;
+  background-image: url("/img/check.svg");
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  padding: 5px 0 5px 30px;
+  background-position: 0;
 }
