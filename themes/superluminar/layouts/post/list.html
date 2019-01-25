@@ -3,8 +3,8 @@
         <article class="sl-blog-header">
           <header>
             <h1 class="sl-headline">{{ .Title }}</h1>
+            {{ .Content }}
           </header>
-          {{ .Content }}
         </article>
         <div class="stage blog-list__container">
               {{ range .Data.Pages.GroupByDate "2006" }}
