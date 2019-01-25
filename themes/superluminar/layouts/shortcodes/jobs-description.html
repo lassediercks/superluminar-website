@@ -1,5 +1,14 @@
 
 
 <section class='stage jobs-page'>
-    {{ .Inner }}
+    <div class="jobs-page_image-container">
+        <img class="jobs-page_image" src="/img/ufo.svg" alt="">
+    </div>
+    <div class="jobs-page_description">
+        
+        <div class="jobs-page_inner{{ if .Get "columns" }} jobs-page_inner-columns{{end}}">
+            {{ .Inner }}
+        </div>
+        <a href="mailto:jobs@superluminar.de" class="sl-button sl-bewerben_button">Jetzt Bewerben</a>
+    </div>
 </section>

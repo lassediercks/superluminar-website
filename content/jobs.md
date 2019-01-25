@@ -6,25 +6,23 @@ menu:
     weight: 3
 ---
 
-
-
+<div class="jobs-container
+">
 {{% jobs-description %}}
 
 # Senior Cloud Consultant (m/w/d)
 
-superluminar bietet Cloud Consulting für Unternehmen, Startups und Organisationen und unser Büro ist in Hamburg am Fischmarkt. 
-Wir verstehen nicht nur die modernsten Technologien, wir schauen auch auf Menschen und Prozesse. So unterstützen wir Organisationen bei der Transition hin zu moderner Produktentwicklung. *Mit statt für euch* ist dabei unser Motto.
+superluminar bietet Cloud Consulting für Unternehmen, Startups und Organisationen und unser Büro ist in Hamburg am Fischmarkt.
+Wir verstehen nicht nur die modernsten Technologien, wir schauen auch auf Menschen und Prozesse. So unterstützen wir Organisationen bei der Transition hin zu moderner Produktentwicklung. _Mit statt für euch_ ist dabei unser Motto.
 
-Als **Senior Cloud Consultant** arbeitest du mit uns zusammen und unterstützt unsere Kunden bei dem Weg in und durch die Cloud. 
+Als **Senior Cloud Consultant** arbeitest du mit uns zusammen und unterstützt unsere Kunden bei dem Weg in und durch die Cloud.
 Der Fokus liegt dabei auf Beratung, Coaching und Trainings. Werkverträge und Arbeit nach Pflichtenheft gibt es bei uns nicht.
 
 {{% /jobs-description %}}
 
-
-
 {{% jobs-description %}}
 
-## Was wir bieten: 
+## Was wir bieten:
 
 - Ein junges und flexibles Unternehmen mit spannenden Kunden
 - Mitarbeit in internen Projekten
@@ -32,10 +30,9 @@ Der Fokus liegt dabei auf Beratung, Coaching und Trainings. Werkverträge und Ar
 - Ein großzügiges Hardware-Setup Budget
 - Teilzeit ist grundsätzlich möglich
 - Fortbildungen wie zum Beispiel "Workshops halten", "Feedback geben und nehmen" und "Visualisieren am Flipchart"
-{{% /jobs-description %}}
+  {{% /jobs-description %}}
 
-
-{{% jobs-description %}}
+{{% jobs-description columns="2" %}}
 
 ## Dein Profil:
 
@@ -53,6 +50,6 @@ Der Fokus liegt dabei auf Beratung, Coaching und Trainings. Werkverträge und Ar
 - Du kennst dich mit Configuration Management-Tools wie z.B. Cloudformation, Terraform, Chef, etc. aus
 - Du verfügst über gute Deutsch- und Englischkenntnisse in Wort und Schrift
 
-Haben wir dein Interesse geweckt? Dann sende uns deine aussagekräftige Bewerbung an [jobs@superluminar.io](mailto:jobs@superluminar.io).
-
 {{% /jobs-description %}}
+
+</div>

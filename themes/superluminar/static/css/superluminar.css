@@ -16,7 +16,7 @@
 
 @keyframes float {
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-100px);
   }
 }
 *,
@@ -58,6 +58,7 @@ body:after {
   justify-content: space-between;
   align-items: center;
   scroll-snap-align: start;
+  scroll-snap-points-y: repeat(100vh);
 }
 
 .sl-navigation-item {
@@ -72,10 +73,6 @@ body:after {
   z-index: 6;
   scroll-snap-align: start;
   height: 100vh;
-}
-
-.stage {
-  scroll-snap-align: start;
 }
 
 /* Home */
@@ -100,17 +97,18 @@ body:after {
 }
 
 .sl-astronauts {
-  height: 350px;
+  height: 100px;
+
   position: relative;
 }
 .sl-astronaut-green {
-  animation: float 5s ease-in-out infinite;
+  animation: float 13s ease-in-out infinite;
   position: absolute;
   left: 30px;
   top: 90px;
 }
 .sl-astronaut-red {
-  animation: float 9s ease-in-out infinite;
+  animation: float 15s ease-in-out infinite;
   position: absolute;
   right: 63px;
   top: -80px;
@@ -123,54 +121,61 @@ body:after {
 }
 /* Jobs */
 
-.jobs-page {
-  height: 70vh;
-}
-
-/* Blog */
-
-.sl-blog-header {
-  text-align: center;
-}
-
-.blog-list__container {
-  max-width: var(--sl-max-width);
+.jobs-container {
+  padding: 120px 0;
+  max-width: 1030px;
   margin: 0 auto;
 }
+.jobs-page {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
 
-.blog-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  height: 90vh;
+}
+.jobs-page:nth-child(odd) {
+  flex-direction: row;
 }
 
-.blog-list__item {
-  text-decoration: none;
+.jobs-page:nth-child(even) .jobs-page_image {
+  transform: translateX(-50px);
 }
-.blog-list__item:nth-child(2n - 1) {
-  background: var(--sl-grape--light);
-  border-radius: 4px;
+
+.jobs-page_description {
+  width: 100%;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
-.blog-list__item-link {
-  display: grid;
-  grid-template-columns: 100px auto;
-  color: inherit;
-  text-decoration: none;
-  padding: 20px;
-  padding-left: 120px;
-  background-image: url("/img/hover_indicator.svg");
-  background-repeat: no-repeat;
-  background-position: -50px 50%;
+
+.jobs-page_image-container {
+  width: 150px;
 }
-.blog-list__item-link:hover {
-  background-position: 20px 50%;
+.jobs-page_image {
+  transform: translateX(-200px);
 }
+
+.jobs-page_inner-columns ul {
+  column-count: 2;
+}
+
+.sl-bewerben_button {
+  margin-top: 50px;
+}
+
 /* Paragraph */
+
+.sl-paragraph,
+p {
+  max-width: 500px;
+  margin: 0;
+  line-height: 1.5;
+}
 
 .sl-paragraph {
   margin-bottom: 70px;
-  max-width: 500px;
-  line-height: 1.5;
 }
 
 /* Button */
@@ -496,22 +501,27 @@ body:after {
 }
 
 /* List */
-.sl-workshop ul {
-  color: var(--sl-pidgeon);
+ul {
   padding: 0;
   margin: 0;
+}
+li {
+  align-items: center;
+  list-style-type: none;
+  background-image: url("/img/check.svg");
+  background-size: 18px 18px;
+  padding: 5px 0 5px 30px;
+  background-position: 0 8px;
+  background-repeat: no-repeat;
+  margin-bottom: 24px;
+}
+/* Workshop */
+.sl-workshop ul {
+  color: var(--sl-pidgeon);
   font-size: 14px;
 }
 .sl-workshop li {
-  align-items: center;
-  list-style-type: none;
   margin-bottom: 14px;
-  background-image: url("/img/check.svg");
-  background-size: 18px 18px;
-  background-repeat: no-repeat;
-  padding-left: 30px;
-  padding: 5px 0 5px 30px;
-  background-position: 0;
 }
 
 /* Team */
@@ -538,4 +548,54 @@ body:after {
   margin-bottom: 1em;
   width: 15vw;
   height: 15vw;
+}
+
+/* Blog */
+
+.sl-blog-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  margin-top: 120px;
+}
+
+.blog-list__container {
+  position: relative;
+  z-index: 5;
+  max-width: var(--sl-max-width);
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+.blog-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.blog-list__item {
+  text-decoration: none;
+  background-image: none;
+  margin: 0;
+}
+.blog-list__item:nth-child(2n - 1) {
+  background: var(--sl-grape--light);
+  border-radius: 4px;
+}
+.blog-list__item-link {
+  display: grid;
+  grid-template-columns: 100px auto;
+  color: inherit;
+  text-decoration: none;
+  padding: 20px;
+  padding-left: 120px;
+  background-image: url("/img/hover_indicator.svg");
+  background-repeat: no-repeat;
+  background-position: -50px 50%;
+}
+.blog-list__item-link:hover {
+  background-position: 20px 50%;
 }
