@@ -46,18 +46,9 @@ function gaOptout() {
 {{- end }}
 <body>
 
-        <header class="sl-header">
-            <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL}}img/superluminar.svg" alt="superluminar" width="150px"/></a>
-            <nav>
-                {{ $currentPage := . }}
-                {{ range .Site.Menus.main }}
-                  <a class="sl-navigation-item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">
-                    <span class="navItem-text">{{ .Name }}</span>
-                  </a>
-                {{ end }}
-                </div>
-            </nav>
-        </header>
+{{ partial "navigation.html" . }}
+
+     
       <div class="sl-main max-width-4 mx-auto px2 py2">
 
        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
