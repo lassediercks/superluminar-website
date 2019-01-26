@@ -1,5 +1,29 @@
+{{ $id := .Get 0 }}
+{{ $toggleID := sha1 $id}}
+
 <div class="sl-team-member">
+    <style>
+        #toggle-{{ $toggleID }}:checked ~ .sl-team-member_description-container{
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+
+    <label for="toggle-{{ $toggleID }}">
     <image class="sl-team-member_image" src="{{ .Get 1 }}" alt="{{.Get 0}}" />
-    {{ .Get 0 }}
-    <span style="display: none;"> {{ .Inner }}</span>
+     {{ .Get 0 }}
+    </label>
+    <input class="sl-team-member_input" type="checkbox" id="toggle-{{ $toggleID }}">
+    <div class="sl-team-member_description-container">
+        <div class="sl-team-member_description">
+            <h2 class="sl-team-member_description-name"> {{ .Get 0 }}</h2>
+            <div class="sl-team-member_description-text">
+                {{ .Inner }}
+            </div>
+
+            <label class="sl-team-member_close" for="toggle-{{ $toggleID }}">
+                <img src="/img/close-icon.svg" alt="">
+            </label>
+        </div>
+    </div>
 </div>

@@ -3,6 +3,7 @@
   --sl-grey: #393f4d;
   --sl-pidgeon: #7a8390;
   --sl-grape--light: #4a303d;
+  --sl-overlay-background: rgba(0, 0, 0, 0.3);
   --sl-purple: #ed486a;
   --sl-teal: #03feb7;
   --sl-font-headline: "Space Mono";
@@ -432,7 +433,7 @@ p {
 
 .sl-workshop {
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--sl-overlay-background);
   visibility: hidden;
   opacity: 0;
   display: flex;
@@ -550,6 +551,64 @@ li {
   height: 15vw;
 }
 
+.sl-team-member_description-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  transition: opacity 170ms ease-in-out;
+  align-items: center;
+  justify-content: center;
+  background: var(--sl-overlay-background);
+}
+.sl-team-member_description {
+  display: flex;
+  flex-direction: column;
+  width: 317px;
+  height: 357px;
+  background: url("/img/team_member-bg.svg");
+  position: relative;
+  padding: 30px;
+  color: var(--sl-pidgeon);
+  font-size: 14px;
+}
+.sl-team-member_description-name {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  color: var(--sl-grey);
+  margin-bottom: 0;
+}
+
+.sl-team-member_description-text {
+  padding-left: 20px;
+}
+
+.sl-team-member_input {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+}
+
+.sl-team-member_close {
+  z-index: 10;
+  background: #fff;
+  right: 10px;
+  top: -10px;
+  width: 40px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 40px;
+  border: 2px solid var(--sl-teal);
+}
 /* Blog */
 
 .sl-blog-header {
@@ -610,7 +669,8 @@ li {
   margin: 0 auto;
 }
 
-.blog-article p {
+.blog-article p,
+.jobs-page_inner p {
   max-width: none;
   line-height: 1.8;
 }
@@ -632,15 +692,18 @@ li {
 }
 
 .blog-article h1,
-h2,
-h3,
-h4,
-h5 {
+.blog-article h2,
+.blog-article h3,
+.blog-article h4,
+.blog-article h5,
+.jobs-page_inner h1,
+.jobs-page_inner h2 {
   margin-top: 2em;
   font-family: var(--sl-font-headline);
   font-weight: var(--sl-font-weight-regular);
   text-transform: uppercase;
 }
+
 .blog-article h1 {
   font-size: 34px;
 }
