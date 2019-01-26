@@ -2,13 +2,16 @@
 
    <header class="sl-header">
         <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL}}img/superluminar.svg" alt="superluminar" width="150px"/></a>
-        <nav>
+        <input type="checkbox" id="header-input" class="sl-header_input">
+        <label class="sl-header_toggle" for="header-input">
+            <img src="/img/menu_icon.svg" alt="">
+        </label>
+        <nav class="sl-header-nav">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
               <a class="sl-navigation-item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">
                 <span class="navItem-text">{{ .Name }}</span>
               </a>
             {{ end }}
-            </div>
         </nav>
     </header>
