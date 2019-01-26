@@ -599,3 +599,48 @@ li {
 .blog-list__item-link:hover {
   background-position: 20px 50%;
 }
+
+.blog-article {
+  position: relative;
+
+  z-index: 5;
+  padding: 100px 32px;
+  box-sizing: content-box;
+  max-width: var(--sl-max-width);
+  margin: 0 auto;
+}
+
+.blog-article p {
+  max-width: none;
+  line-height: 1.8;
+}
+
+.blog-article pre {
+  background: var(--sl-grey);
+  padding: 15px 30px;
+  border-radius: 4px;
+  max-width: none;
+}
+
+.blog-article a {
+  color: var(--sl-teal);
+}
+
+.blog-article img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.blog-article h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 2em;
+  font-family: var(--sl-font-headline);
+  font-weight: var(--sl-font-weight-regular);
+  text-transform: uppercase;
+}
+.blog-article h1 {
+  font-size: 34px;
+}
