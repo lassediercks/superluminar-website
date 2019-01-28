@@ -1,40 +1,66 @@
 
 <footer class="sl-footer">
-<!-- Begin Mailchimp Signup Form -->
-<div class="sl-newsletter">
-    <h3 class="sl-headline sl-newsletter_headline">Nichts mehr Verpassen</h3>
-    <span class="sl-newsletter_hint">
-            melde dich für unseren Newsletter an
-    </span>
-    <form action="https://superluminar.us17.list-manage.com/subscribe/post?u=1850848feb35c80ecb5a4a6b8&amp;id=18f1e75edc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="sl-newsletter_form validate" target="_blank" novalidate>
-        <input placeholder="E-Mail" type="email" value="" name="EMAIL" class="sl-newsletter_input required email" id="mce-EMAIL">
-    
-        <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1850848feb35c80ecb5a4a6b8_18f1e75edc" tabindex="-1" value=""></div>
-        <input type="submit" value="anmelden" name="subscribe" id="mc-embedded-subscribe" class="sl-button sl-newsletter_button">
-    </form>
-        
-        <!--End mc_embed_signup-->
-    <div class="sl-footer_info">&copy; 2017 - {{ now.Year }} {{ .Site.Title }}
-
-        <div class="sl-footer_infolinks">
-            <a href="{{ relref . "impressum.md" }}">Impressum</a>
-            <a href="{{ relref . "agb.md" }}" rel="noindex nofollow">AGB</a>
-            <a href="{{ relref . "datenschutz.md" }}" rel="noindex nofollow">Datenschutz</a>
-        </div>
-        
-    </div>
-</div>
-
     <div class="sl-referenzen">
         <h2 class="sl-headline sl-referenzen_headline">Partnerschaften und Referenzen</h3>
-        <img src="/img/moon.svg" class="sl-referenzen__image" alt="">
+        <img src="/img/moon.png" class="sl-referenzen__image" alt="">
+        <ul class="sl-referenzen_list">
+            <li class="sl-referenzen_list-item">
+                Moia
+            </li>
+            <li class="sl-referenzen_list-item">
+                Otto
+            </li>
+            <li class="sl-referenzen_list-item">
+                Silpion
+            </li>
+            <li class="sl-referenzen_list-item">
+                Figo
+            </li>
+            <li class="sl-referenzen_list-item">
+                dpa mediatec
+            </li>
+            <li class="sl-referenzen_list-item">
+                cohn&wolfe
+            </li>
+
+            <li class="sl-referenzen_list-item">
+                Jimdo
+            </li>
+        </ul>
     </div>
+<!-- Begin Mailchimp Signup Form -->
+    <div class="sl-newsletter">
+        <h3 class="sl-headline sl-newsletter_headline">Nichts mehr Verpassen</h3>
+        <span class="sl-newsletter_hint">
+                melde dich für unseren Newsletter an
+        </span>
+        <form action="https://superluminar.us17.list-manage.com/subscribe/post?u=1850848feb35c80ecb5a4a6b8&amp;id=18f1e75edc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="sl-newsletter_form validate" target="_blank" novalidate>
+            <input placeholder="E-Mail" type="email" value="" name="EMAIL" class="sl-newsletter_input required email" id="mce-EMAIL">
+        
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1850848feb35c80ecb5a4a6b8_18f1e75edc" tabindex="-1" value=""></div>
+            <input type="submit" value="anmelden" name="subscribe" id="mc-embedded-subscribe" class="sl-button sl-newsletter_button">
+        </form>
+            
+            <!--End mc_embed_signup-->
+        <div class="sl-footer_info">
+            <span class="sl-footer_copyright"> &copy; 2017 - {{ now.Year }} {{ .Site.Title }}
+                </span>
+            <div class="sl-footer_infolinks">
+                <a href="{{ relref . "impressum.md" }}">Impressum</a>
+                <a href="{{ relref . "agb.md" }}" rel="noindex nofollow">AGB</a>
+                <a href="{{ relref . "datenschutz.md" }}" rel="noindex nofollow">Datenschutz</a>
+            </div>
+            
+        </div>
+    </div>
+
+   
         <!--End mc_embed_signup-->
-	</footer>
+</footer>
 </div>
 </body>
 </html>

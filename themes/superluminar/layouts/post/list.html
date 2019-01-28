@@ -14,7 +14,7 @@
                 <li class="blog-list__item">
                   <a href="{{ .Permalink }}" class="blog-list__item-link btn pl0">
                     <span class="blog-list__item-date">{{ dateFormat "1. Jan" .Date  }}</span>
-                    <span>{{ .Title }}</span>
+                    <span class="blog-list__item-title">{{ .Title }}</span>
                   </a>
                 </li>
                 {{ end }}
