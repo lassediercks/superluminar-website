@@ -4,7 +4,15 @@
         <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL}}img/superluminar.svg" alt="superluminar" width="150px"/></a>
         <input type="checkbox" id="header-input" class="sl-header_input">
         <label class="sl-header_toggle" for="header-input">
-            <img src="/img/menu_icon.svg" alt="">
+                <svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="menu_icon" transform="translate(4.000000, 11.000000)">
+                            <path  stroke="#FFFFFF" class="menu_icon-upper-stroke" d="M4,0.5 L29,0.5" id="Path-4"></path>
+                            <path  stroke="#FFFFFF" class="menu_icon-middle-stroke" d="M10,6.5 L29,6.5" id="Path-4-Copy"></path>
+                            <path  stroke="#FFFFFF" class="menu_icon-lower-stroke" d="M0,13.5 L29,13.5" id="Path-4-Copy-2"></path>
+                        </g>
+                    </g>
+                </svg>
         </label>
         <nav class="sl-header-nav">
             {{ $currentPage := . }}

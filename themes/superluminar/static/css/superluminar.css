@@ -81,6 +81,26 @@ body:after {
   visibility: visible;
   opacity: 1;
 }
+.sl-header_toggle path {
+  transition: opacity 110ms ease-out, transform 110ms ease-out,
+    stroke 130ms ease-out, transform-origin 110ms ease-out;
+}
+
+.sl-header_input:checked ~ .sl-header_toggle .menu_icon-upper-stroke {
+  transform: rotate(-29deg) translateY(8px) translateX(3px);
+  stroke: var(--sl-teal);
+  transform-origin: 50%;
+}
+
+.sl-header_input:checked ~ .sl-header_toggle .menu_icon-middle-stroke {
+  opacity: 0;
+}
+
+.sl-header_input:checked ~ .sl-header_toggle .menu_icon-lower-stroke {
+  transform: rotate(29deg) translateX(-9px);
+  transform-origin: 50%;
+  stroke: var(--sl-teal);
+}
 
 .sl-header_input:checked ~ .sl-header-nav .sl-navigation-item {
   animation: item-appear 170ms ease-in-out 1 50ms;
@@ -324,6 +344,7 @@ p {
 }
 @media (max-width: 860px) {
   .sl-headline {
+    max-width: 500px;
     font-size: 28px;
   }
 }
