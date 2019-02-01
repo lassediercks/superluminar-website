@@ -414,7 +414,7 @@ Resources:
         - Name: BUCKET_PATH
           Value: "${CODEBUILD_WEBHOOK_TRIGGER}"
         - Name: BASE_URL
-          Value: !Join ['', [ 'https://', "${CODEBUILD_WEBHOOK_TRIGGER}", "/" ] ]
+          Value: !Join ['', [ 'https://superluminar.io/', "${CODEBUILD_WEBHOOK_TRIGGER}", "/" ] ]
         - Name: GITHUB_TOKEN
           Value: !Ref GithubOauthToken
         - Name: CLOUDFRONT_DISTRIBUTION_ID
