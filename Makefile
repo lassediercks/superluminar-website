@@ -1,4 +1,4 @@
-HUGO_VERSION := 0.40.2
+HUGO_VERSION := 0.54.0
 ifeq ($(shell uname),Darwin)
 	OS := macOS
 else
