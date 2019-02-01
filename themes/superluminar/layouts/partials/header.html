@@ -7,7 +7,8 @@
         <title>{{ .Site.Title }} - {{ .Title }}</title>
         {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
         {{ with .Description }}<meta name="og:description" content="{{ . }}">{{ end }}
-        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/superluminar.css">
+        {{ $style := resources.Get "styles.tmpl" | resources.ExecuteAsTemplate "css/superluminar.css" . }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}">
 
         {{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
         <meta property="og:title" content="{{ .Title }}">
