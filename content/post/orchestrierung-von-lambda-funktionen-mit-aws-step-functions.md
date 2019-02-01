@@ -161,7 +161,7 @@ Wir haben nun die Einzelbestandteile unserer Job Logik in einzelne Funktionen au
 
 Mit Hilfe des serverless Plugins [`serverless-step-functions`](https://github.com/horike37/serverless-step-functions) können wir unsere State-Machine direkt in unserer `serverless.yml` definieren. Wir sitzen nun auf allen Bestandteilen, um die finale State Machine zusammenstecken zu können. Wir haben unsere einzelnen Funktionen (`initialize`, `fetch`, `persist`), unseren Iterator (`offset`) und eine Abbruchbedingung (`continue`) im State. Für den Abbruch benutzen wir eine der Step Functions Primitiven (`Choice`) und prüfen auf unsere Abbruchbedingung `continue`. Weitere Primitiven findet ihr in der [AWS Dokumentation](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-states.html)). Unsere fertige State Machine sieht danach so aus:
 
-![State Machine](/img/state-machine.png)
+![State Machine](img/state-machine.png)
 
 {{< highlight yml >}}
 stateMachines:

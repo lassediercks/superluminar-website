@@ -35,7 +35,7 @@ Eine Pipeline gliedert sich in mehrere Phasen, sogenannte *Stages*. Eine Stage w
 
 Für unsere Webseite genügen uns zwei Stages. Eine `Source`-Stage die Code von GitHub auscheckt. Und eine `DeployWebsite`-Stage, die das Artefakt baut und die Webseite in einen S3-Bucket kopiert. In der AWS-Konsole sieht das ganze so aus:
 
-![Code Pipeline](/img/code-pipeline.png)
+![Code Pipeline](img/code-pipeline.png)
 
 Die Konfiguration für die `Source`-Stage sieht wie folgt aus:
 ```yaml

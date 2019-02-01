@@ -68,11 +68,11 @@ In alle Accounts wird eine sogenannte Baseline provisioniert, diese enthält in 
 
 Einen neuen AWS Account anlegen könnt ihr nach erfolgreicher Einrichtung der AWS Landing Zone über den AWS Service Catalog, wo ein Produkt `AWS-Landing-Zone-Account-Vending-Machine` angelegt wurde. Über dieses könnt ihr jetzt neue Accounts provisionieren. Die Baseline wird vollautomatisiert mit angelegt.
 
-{{< figure src="/img/aws-landing-zone/new-account.png" title="Auswahl des Produkts im Service Catalog">}}
+{{< figure src="{{ .Site.BaseURL }}img/aws-landing-zone/new-account.png" title="Auswahl des Produkts im Service Catalog">}}
 
 Nach Auswahl des Produktes können E-Mail-Adresse des Stammbenutzers für den neuen Account sowie ein Name und die Organizational Unit ausgewählt werden. Zusätzlich könnt ihr einstellen, ob und wie eine VPC konfiguriert werden soll.
 
-{{< figure src="/img/aws-landing-zone/new-account-2.png" title="Einstellen der Parameter für den neuen Account">}}
+{{< figure src="{{ .Site.BaseURL }}img/aws-landing-zone/new-account-2.png" title="Einstellen der Parameter für den neuen Account">}}
 
 ## Was uns gefällt
 

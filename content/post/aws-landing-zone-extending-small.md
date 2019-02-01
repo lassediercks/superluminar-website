@@ -53,7 +53,7 @@ Resources:
 
 Sobald ihr diese Änderung in unsere Landing Zone Konfiguration eingespielt habt, startet die CodePipeline und erstellt jetzt per CloudFormation StackSets in jedem Sub-Account einen neuen CloudFormation Stack aus dem Template oben:
 
-{{< figure src="/img/aws-landing-zone/lz-stacksets.png" title="CloudFormation StackSet mit Stack Instance je Sub Account">}}
+{{< figure src="{{ .Site.BaseURL }}img/aws-landing-zone/lz-stacksets.png" title="CloudFormation StackSet mit Stack Instance je Sub Account">}}
 
 Nachdem die IAM Rolle in jedem von Landing Zone verwalteten AWS Account ausgerollt wurde, müsst ihr sie noch jeweils auch dem API Gateway Service bekannt machen, so dass er diese Rolle nutzt. Das kann über folgendes CloudFormation Template passieren:
 
@@ -105,7 +105,7 @@ Auch Änderungen am Manifest werden automatisch ausgerollt. Beispielsweise könn
 
 Das Ergebnis ist, dass der Stack jetzt sowohl in `eu-central-1` als auch neu in `eu-west-2` ausgerollt wird:
 
-{{< figure src="/img/aws-landing-zone/stack-sets-2-regions.png" title="CloudFormation StackSet mit Stack Instance je Sub Account in 2 Regionen">}}
+{{< figure src="{{ .Site.BaseURL }}img/aws-landing-zone/stack-sets-2-regions.png" title="CloudFormation StackSet mit Stack Instance je Sub Account in 2 Regionen">}}
 
 ## Und Löschen?   
 

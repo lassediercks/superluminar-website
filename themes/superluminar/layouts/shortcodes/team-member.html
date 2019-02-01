@@ -10,7 +10,7 @@
     </style>
 
     <label for="toggle-{{ $toggleID }}">
-    <image class="sl-team-member_image" src="{{ .Get 1 }}" alt="{{.Get 0}}" />
+    <image class="sl-team-member_image" src="{{ .Site.BaseURL }}{{ .Get 1 }}" alt="{{.Get 0}}" />
      {{ .Get 0 }}
     </label>
     <input class="sl-team-member_input" type="checkbox" id="toggle-{{ $toggleID }}">
@@ -22,7 +22,7 @@
             </div>
 
             <label class="sl-team-member_close" for="toggle-{{ $toggleID }}">
-                <img src="/img/close-icon.svg" alt="">
+                <img src="{{ .Site.BaseURL }}img/close-icon.svg" alt="">
             </label>
         </div>
     </div>
