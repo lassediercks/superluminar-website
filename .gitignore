@@ -3,3 +3,5 @@ hugo
 *.swp
 tmp/
 *.DS_Store
+resources/
+
