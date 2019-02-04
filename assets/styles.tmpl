@@ -31,7 +31,6 @@ body {
   background-image: radial-gradient(#23202b, #2e191f);
   max-height: 100vh;
   overflow: auto;
-  scroll-snap-type: y mandatory;
 }
 
 body:after {
@@ -47,7 +46,6 @@ body:after {
 .stage {
   position: relative;
   z-index: 6;
-  scroll-snap-align: start;
   height: 100vh;
 }
 
@@ -68,8 +66,6 @@ body:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  scroll-snap-align: start;
-  scroll-snap-points-y: repeat(100vh);
 }
 
 .sl-header_input {
@@ -402,7 +398,6 @@ p {
   justify-content: flex-end;
   position: relative;
   z-index: 5;
-  scroll-snap-align: end;
 }
 
 .sl-newsletter {
