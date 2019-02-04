@@ -49,6 +49,12 @@ body:after {
   height: 100vh;
 }
 
+@media (max-width: 860px) {
+  .stage {
+    height: auto;
+  }
+}
+
 /* Header */
 
 .active .navItem-text {
@@ -176,11 +182,17 @@ body:after {
 }
 @media (max-width: 860px) {
   .home-area {
+    padding: 200px 32px;
     grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    align-content: flex-start;
+    align-items: stretch;
+    height: auto;
   }
   .sl-toolbox {
     grid-row: 1;
     height: 400px;
+    margin-bottom: 20px;
   }
   .sl-toolbox img {
     height: 100%;
@@ -225,14 +237,7 @@ body:after {
       transform: translateY(-20px);
     }
   }
-  .home-area {
-    padding: 200px 32px;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    align-content: flex-start;
-    align-items: stretch;
-    height: 90vh;
-  }
+
   .sl-astronauts {
     max-width: 320px;
   }
@@ -253,6 +258,11 @@ body:after {
   width: 100%;
 }
 
+@media (max-width: 860px) {
+  .sl-meteors {
+    max-width: 500px;
+  }
+}
 /* Jobs */
 
 .jobs-container {
@@ -266,6 +276,13 @@ body:after {
   flex-direction: row-reverse;
 
   height: 90vh;
+}
+
+@media (max-width: 860px) {
+  .jobs-page {
+    height: auto;
+    padding: 0 0 120px 0;
+  }
 }
 .jobs-page:nth-child(odd) {
   flex-direction: row;
@@ -291,8 +308,32 @@ body:after {
   transform: translateX(-200px);
 }
 
+@media (max-width: 960px) {
+  .jobs-page_description {
+    margin: 0;
+    padding: 0 30px;
+
+    position: relative;
+    z-index: 5;
+  }
+  .jobs-page_image-container {
+    position: absolute;
+    left: 50px;
+    opacity: 0.5;
+  }
+  .jobs-page_image {
+    transform: none;
+  }
+}
+
 .jobs-page_inner-columns ul {
   column-count: 2;
+}
+
+@media (max-width: 960px) {
+  .jobs-page_inner-columns ul {
+    column-count: 1;
+  }
 }
 
 .sl-bewerben_button {
@@ -314,7 +355,7 @@ p {
 
 @media (max-width: 860px) {
   .sl-paragraph {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -340,7 +381,6 @@ p {
 }
 @media (max-width: 860px) {
   .sl-headline {
-    max-width: 500px;
     font-size: 28px;
   }
 }
@@ -511,6 +551,7 @@ p {
   }
   .sl-newsletter {
     position: relative;
+    margin: 0 auto;
   }
   .sl-referenzen__image {
     display: none;
@@ -537,6 +578,12 @@ p {
   box-sizing: content-box;
 }
 
+@media (max-width: 860px) {
+  .workshops {
+    padding: 60px 32px;
+  }
+}
+
 .workshops_header {
   margin-top: 70px;
   margin-bottom: 100px;
@@ -551,6 +598,10 @@ p {
   grid-template-rows: repeat(5, 104px);
 }
 
+@media (max-width: 860px) {
+  .workshops_grid {
+  }
+}
 .sl-workshop__wrap {
   position: relative;
   margin-bottom: 40px;
@@ -591,6 +642,11 @@ p {
   color: black;
 }
 
+@media (max-width: 860px) {
+  .sl-workshop-thumb {
+    width: 100vw;
+  }
+}
 .sl-workshop-thumb_duration {
   background: white;
   display: flex;
@@ -918,7 +974,7 @@ li {
     padding: 0;
   }
   .blog-list__item-link {
-    padding: 30px 60px;
+    padding: 30px 30px;
     grid-template-columns: auto;
   }
   .blog-list__item-link:hover {
